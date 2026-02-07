@@ -76,6 +76,22 @@ function selectYes() {
     movePage(2);
 }
 
+// Music player controls
+const audio = new Audio('background-music.mp3'); // Ensure the audio file is present
+function playMusic() { audio.play(); }
+function pauseMusic() { audio.pause(); }
+function replayMusic() { audio.currentTime = 0; playMusic(); }
+
+document.getElementById('playButton').onclick = playMusic;
+document.getElementById('pauseButton').onclick = pauseMusic;
+document.getElementById('replayButton').onclick = replayMusic;
+
+// Sound effects for button clicks
+function playClickSound() {
+    const clickSound = new Audio('click-sound.mp3');
+    clickSound.play();
+}
+
 // Select choice on page 2
 function selectChoice(choice) {
     console.log('You selected:', choice);
