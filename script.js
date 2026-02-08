@@ -40,6 +40,6 @@ function handleNoClick() {
 
 function selectChoice(choice) {
     if (choice === "kiss") alert("💋 Kiss incoming!");
-    if (choice === "date") alert("🌹 Date night confirmed!");
-    if (choice === "shopping") alert("🛍️ Wallet crying already!");
+    if (choice === "date") alert("🌹 Date night confirmed! - Tell me where");
+    if (choice === "shopping") alert("🛍️ Wallet crying already! - Aab to le chal");
 }
